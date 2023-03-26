@@ -1,4 +1,4 @@
-package com.nvkhang96.cleanarchitecturenoteapp
+package com.nvkhang96.cleanarchitecturenoteapp.feature_note.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
