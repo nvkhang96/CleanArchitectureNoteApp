@@ -1,6 +1,5 @@
 package com.nvkhang96.cleanarchitecturenoteapp.feature_note.presentation.notes
 
-import android.annotation.SuppressLint
 import androidx.compose.animation.*
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -21,7 +20,6 @@ import com.nvkhang96.cleanarchitecturenoteapp.feature_note.presentation.notes.co
 import com.nvkhang96.cleanarchitecturenoteapp.feature_note.presentation.notes.components.OrderSection
 import kotlinx.coroutines.launch
 
-@SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun NoteScreen(
     navController: NavController,
@@ -43,9 +41,10 @@ fun NoteScreen(
             }
         },
         scaffoldState = scaffoldState
-    ) {
+    ) { padding ->
         Column(
             modifier = Modifier
+                .padding(padding)
                 .fillMaxSize()
                 .padding(16.dp)
         ) {
